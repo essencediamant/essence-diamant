@@ -55,9 +55,10 @@ textarea {
 #navbar {
   position: fixed;
   z-index: 2;
-  margin-bottom: 20px;
   overflow: visible;
   top: 0;
+  left: 0;
+  right: 0;
   background-color: #ffffff;
 }
 
