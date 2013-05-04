@@ -1,8 +1,9 @@
-@import "bootstrap";
-
 /* mixins, variables, etc. */
 
+$gray: #555;
 $grayMediumLight: #eaeaea;
+$grayLight: #999;
+$grayDarker: #222;
 
 /* universal */
 
@@ -11,8 +12,18 @@ html {
 }
 
 body {
-	padding-top: 120px;
 	background: url(image_path('EDnebula.jpg')) fixed;
+  padding-top: 120px;
+  color: #333333;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+} 
+
+a {
+  color: #0088CC;
+  text-decoration: none;
 }
 
 section {
@@ -23,30 +34,96 @@ textarea {
 	resize: vertical;
 }
 
-.center {
-	text-align: center;
-	h1 {
-		margin-bottom: 10px;
-	}
-}
-
-
 /* header */
 
+header {
+  display: block;
+}
+
+#navbar {
+  box-shadow: 0 3px 8px #333333;
+  position: fixed;
+  z-index: 2;
+  overflow: visible;
+  top: 0;
+  width: 100%;
+  background-color: #1b1b1b;
+}
+
+#navbar-inner {
+  height: 75px;
+  margin: 0 auto;
+  width: 970px;
+  display: block;
+}
+
 #logo {
-	float: left;
-	margin-right: 10px;
-	font-size: 1.7em;
-	color: white;
-	text-transform: uppercase;
-	letter-spacing: -1px;
-	padding-top: 9px;
-	font-weight: bold;
-	line-height: 1;
-	&:hover {
-    color: white;
-	  text-decoration: none;
+  float: left;
+  margin-right: 10px;
+  font-size: 2.1em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 20px;
+  font-weight: bold;
+  line-height: 1;
+  &:hover {
+    color: gray;
+    text-decoration: none;
   }
+}
+
+#nav {
+  display: block;
+  margin: 0;
+  height: 75px;
+  float: left;
+  ul {
+    margin: 0;
+    list-style: none outside none;
+    float: left;
+    li {
+      padding-left: 10px;
+      padding-right: 10px;
+      min-height: 75px;
+      float: left;
+      &:hover {
+        background-color: $grayLight;
+      }
+        a {
+          top: 24px;
+          position: relative;
+          color: white;
+          font-size: 1.7em;
+        }
+    }
+  }
+}
+
+#navbar-bottom-border {
+  padding: 1px;
+  background: linear-gradient(to bottom, #d8b74b 0%, #e5cf87 100%) repeat scroll 0 0 transparent;
+}
+
+/* main */
+
+#main {
+	background-color: white;
+	padding: 60px;
+  box-shadow: 0 3px 8px #333333;
+}
+
+.container {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container:before, .container:after {
+  clear: both;
+  content: "";
+  display: table;
+  line-height: 0;
 }
 
 /* footer */
