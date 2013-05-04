@@ -15,8 +15,7 @@ body {
 	background: url(image_path('EDnebula.jpg')) fixed;
   padding-top: 125px;
   color: #333333;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
+  font: 15px/22px Helvetica,Arial,Verdana,sans-serif;
   line-height: 20px;
   margin: 0;
 } 
@@ -47,7 +46,9 @@ header {
   overflow: visible;
   top: 0;
   width: 100%;
-  background-color: #1b1b1b;
+  background: linear-gradient(to bottom, #333333 0%, #1b1b1b 100%) repeat scroll 0 0 transparent;
+  /*background-color: #333333;*/
+  /*background-color: #1b1b1b;*/
 }
 
 #navbar-inner {
@@ -108,11 +109,9 @@ header {
 /* quotebox */
 
 #quotebox {
+  box-shadow: 0 3px 8px #333333;
   background: none repeat scroll 0 0 #FFFFFF;
   opacity: 0.65;
-  width: 940px;
-  margin-left: auto;
-  margin-right: auto;
   display: block;
   overflow: hidden;
   margin-bottom: 25px;
@@ -124,7 +123,7 @@ header {
   .author {
     float: right;
     padding-right: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 2px;
     margin: 0;
   }
 }
@@ -133,8 +132,12 @@ header {
 
 #main {
 	background-color: white;
-	padding: 60px;
+	padding: 20px 60px;
   box-shadow: 0 3px 8px #333333;
+}
+
+#title {
+
 }
 
 .container {
