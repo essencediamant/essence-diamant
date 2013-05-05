@@ -60,12 +60,11 @@ header {
 
 #logo {
   float: left;
-  margin-right: 50px;
-  font-size: 1.7em;
+  margin-right: 25px;
+  font-size: 1.3em;
   color: white;
-  text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 22px;
+  padding-top: 23px;
   font-weight: bold;
   line-height: 1;
   &:hover {
@@ -87,21 +86,79 @@ header {
     float: left;
     li {
       border-right: 2px groove #1b1b1b;
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
       min-height: 75px;
       float: left;
-      &:hover {
-        background-color: $grayLight;
-
-      }
         a {
           top: 24px;
           position: relative;
           color: white;
-          font-size: 1.7em;
+          font-size: 1.2em;
         }
     }
+  }
+}
+/*
+.strength {
+  &:hover {
+    background: linear-gradient(to bottom, #FF0000 0%, #8B0000 100%) repeat scroll 0 0 transparent;
+  }
+}
+        
+.joy { 
+  &:hover {
+    background: linear-gradient(to bottom, #FFFF00 0%, #8B8B00 100%) repeat scroll 0 0 transparent;
+  }
+}
+
+.will {
+  &:hover {
+    background: linear-gradient(to bottom, #ffffff 0%, #b8b8b8 100%) repeat scroll 0 0 transparent;
+  }
+}
+        
+.compassion {
+  &:hover {
+    background: linear-gradient(to bottom, #00FF00 0%, #008B00 100%) repeat scroll 0 0 transparent;
+  }
+}
+        
+.clarity {
+  &:hover {
+        background: linear-gradient(to bottom, #303030 0%, #000000 100%) repeat scroll 0 0 transparent;
+
+  }
+}*/
+
+.strength {
+  &:hover {
+    background: linear-gradient(to bottom, #FF0000 0%, #1b1b1b 100%) repeat scroll 0 0 transparent;
+  }
+}
+        
+.joy { 
+  &:hover {
+    background: linear-gradient(to bottom, #FFFF00 0%, #1b1b1b 100%) repeat scroll 0 0 transparent;
+  }
+}
+
+.will {
+  &:hover {
+    background: linear-gradient(to bottom, #ffffff 0%, #1b1b1b 100%) repeat scroll 0 0 transparent;
+  }
+}
+        
+.compassion {
+  &:hover {
+    background: linear-gradient(to bottom, #00FF00 0%, #1b1b1b 100%) repeat scroll 0 0 transparent;
+  }
+}
+        
+.clarity {
+  &:hover {
+        background: linear-gradient(to bottom, #303030 0%, #000000 100%) repeat scroll 0 0 transparent;
+
   }
 }
 
@@ -136,7 +193,7 @@ header {
 
 #main {
 	background-color: white;
-	padding: 20px 60px;
+	padding: 15px 42px;
   box-shadow: 0 3px 8px #333333;
 }
 
