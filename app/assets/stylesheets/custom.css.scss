@@ -54,18 +54,18 @@ header {
 #navbar-inner {
   height: 75px;
   margin: 0 auto;
-  width: 970px;
+  width: 940px;
   display: block;
 }
 
 #logo {
   float: left;
-  margin-right: 10px;
-  font-size: 2.1em;
+  margin-right: 50px;
+  font-size: 1.7em;
   color: white;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 20px;
+  padding-top: 22px;
   font-weight: bold;
   line-height: 1;
   &:hover {
@@ -79,17 +79,21 @@ header {
   margin: 0;
   height: 75px;
   float: left;
+  border-left: 2px groove #1b1b1b;
   ul {
     margin: 0;
+    padding: 0;
     list-style: none outside none;
     float: left;
     li {
+      border-right: 2px groove #1b1b1b;
       padding-left: 10px;
       padding-right: 10px;
       min-height: 75px;
       float: left;
       &:hover {
         background-color: $grayLight;
+
       }
         a {
           top: 24px;
