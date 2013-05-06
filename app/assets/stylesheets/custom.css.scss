@@ -58,13 +58,19 @@ header {
   display: block;
 }
 
+#logo-image {
+  margin-top: 7px;
+  margin-right: 10px;
+  float: left;
+}
+
 #logo {
   float: left;
   margin-right: 25px;
   font-size: 1.3em;
   color: white;
   letter-spacing: -1px;
-  padding-top: 23px;
+  padding-top: 27px;
   font-weight: bold;
   line-height: 1;
   &:hover {
@@ -91,7 +97,7 @@ header {
       min-height: 75px;
       float: left;
         a {
-          top: 24px;
+          top: 28px;
           position: relative;
           color: white;
           font-size: 1.2em;
