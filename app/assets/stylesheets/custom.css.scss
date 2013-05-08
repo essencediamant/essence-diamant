@@ -52,6 +52,7 @@ header {
 
 #navbar-inner {
   height: 75px;
+  clear: both;
   margin: 0 auto;
   width: 940px;
   display: block;
@@ -199,15 +200,17 @@ header {
 /* footer */
 
 footer {
+  display: block;
 	margin-top: 45px;
 	padding-top: 5px;
 	border-top: 2px solid #d8b74b;
 	color: $grayLight;
+  height: 150px;
   background: linear-gradient(to bottom, #333333 0%, #1b1b1b 100%) repeat scroll 0 0 transparent;
 }
 
 #footer-holder {
-  height: 75px;
+  height: 150px;
   margin: 0 auto;
   width: 940px;
   display: block;
@@ -220,4 +223,14 @@ footer {
   small {
     float: left;
   }
+}
+
+#footer-col-holder { 
+  margin-left: 120px;
+  width: 940px;
+}
+
+.footer-col {
+  float: left;
+  width: 313px;
 }
