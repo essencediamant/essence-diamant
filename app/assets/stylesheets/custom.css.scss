@@ -13,7 +13,6 @@ html {
 
 body {
 	background: url(image_path('DAplanet.png')) fixed;
-  padding-top: 125px;
   color: #333333;
   font: 15px/22px Helvetica,Arial,Verdana,sans-serif;
   line-height: 20px;
@@ -43,19 +42,19 @@ header {
 #navbar {
   box-shadow: 0 3px 8px #333333;
   position: fixed;
-  z-index: 2;
-  overflow: visible;
+  z-index: 10;
   top: 0;
   width: 100%;
   background: linear-gradient(to bottom, #333333 0%, #1b1b1b 100%) repeat scroll 0 0 transparent;
 }
 
 #navbar-inner {
-  height: 75px;
   clear: both;
   margin: 0 auto;
   width: 940px;
   display: block;
+  overflow: hidden;
+
 }
 
 #logo-image {
@@ -96,12 +95,12 @@ header {
       padding-right: 20px;
       min-height: 75px;
       float: left;
-        a {
-          top: 28px;
-          position: relative;
-          color: white;
-          font-size: 1.2em;
-        }
+      a {
+        top: 28px;
+        position: relative;
+        color: white;
+        font-size: 1.2em;
+      }
     }
   }
 }
@@ -161,23 +160,29 @@ header {
 
 /* main */
 
+#main-wrapper {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 125px;
+  &:before {
+    clear: both;
+    content: "";
+    display: table;
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+    line-height: 0;
+  }
+}
+
 #main {
 	background-color: white;
 	padding: 15px 42px;
   box-shadow: 0 3px 8px #333333;
-}
-
-.container {
-    width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.container:before, .container:after {
-  clear: both;
-  content: "";
-  display: table;
-  line-height: 0;
 }
 
 #announcement-box {
@@ -210,27 +215,35 @@ footer {
 }
 
 #footer-holder {
-  height: 150px;
   margin: 0 auto;
   width: 940px;
   display: block;
+  overflow: hidden;
   a {
     color: $gray;
     &:hover {
       color: $grayDarker;
     }
   }
-  small {
-    float: left;
-  }
 }
 
 #footer-col-holder { 
-  margin-left: 120px;
   width: 940px;
+  overflow: hidden;
 }
 
 .footer-col {
   float: left;
   width: 313px;
+  h3 {
+    padding-left: 120px;
+  }
+}
+
+#copy {
+  overflow: hidden;
+  small {
+    padding-top: 5px;
+    float: left;
+  }
 }
