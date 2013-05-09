@@ -34,18 +34,15 @@ textarea {
 
 /* header */
 
-header {
+#navbar {
   display: block;
   border-bottom: 2px solid #d8b74b;
-}
-
-#navbar {
   box-shadow: 0 3px 8px #333333;
   position: fixed;
   z-index: 10;
   top: 0;
   width: 100%;
-  background: linear-gradient(to bottom, #333333 0%, #1b1b1b 100%) repeat scroll 0 0 transparent;
+  background: linear-gradient(to bottom, #383838 0%, #242424 100%) repeat scroll 0 0 transparent;
 }
 
 #navbar-inner {
@@ -205,13 +202,14 @@ header {
 /* footer */
 
 footer {
+  padding-top: 10px;
+  bottom: 0;
   display: block;
 	margin-top: 45px;
-	padding-top: 5px;
 	border-top: 2px solid #d8b74b;
 	color: $grayLight;
-  height: 150px;
-  background: linear-gradient(to bottom, #333333 0%, #1b1b1b 100%) repeat scroll 0 0 transparent;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #383838 0%, #242424 100%) repeat scroll 0 0 transparent;
 }
 
 #footer-holder {
@@ -235,8 +233,39 @@ footer {
 .footer-col {
   float: left;
   width: 313px;
-  h3 {
-    padding-left: 120px;
+  display: block;
+}
+
+.contact-header {
+  margin-top: 0;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 40px;
+  background: url(image_path('contact.png')) no-repeat scroll 0 3px transparent;
+}
+
+.subscribe-header {
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 40px;
+  background: url(image_path('subscribe.png')) no-repeat scroll 0 5px transparent;
+}
+
+.follow-header {
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 48px;
+  background: url(image_path('follow.png')) no-repeat scroll 0 2px transparent;
+}
+
+#email-button {
+  background: linear-gradient(to bottom, #00A0D7 0%, #0088CE 4%, #0051CF 96%, #00559B 100%) repeat scroll 0 0 transparent;
+  padding: 6px 15px 6px;
+  a {
+    color: #ffffff;
   }
 }
 
