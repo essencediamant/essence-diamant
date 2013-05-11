@@ -42,6 +42,11 @@ textarea {
   position: fixed;
   z-index: 10;
   top: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+#navbar-holder {
   width: 100%;
   background: linear-gradient(to bottom, #383838 0%, #242424 100%) repeat scroll 0 0 transparent;
   overflow: hidden;
