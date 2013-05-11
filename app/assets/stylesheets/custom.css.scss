@@ -17,6 +17,7 @@ body {
   font: 15px/22px Helvetica,Arial,Verdana,sans-serif;
   line-height: 20px;
   margin: 0;
+  min-width: 1000px;
 } 
 
 a {
@@ -201,28 +202,23 @@ textarea {
 
 /* footer */
 
-footer {
+.footer {
+  background: linear-gradient(to bottom, #383838 0%, #242424 100%) repeat scroll 0 0 transparent;
   padding-top: 10px;
-  bottom: 0;
   display: block;
 	margin-top: 45px;
 	border-top: 2px solid #d8b74b;
 	color: $grayLight;
-  overflow: hidden;
-  background: linear-gradient(to bottom, #383838 0%, #242424 100%) repeat scroll 0 0 transparent;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 0;
+  padding-bottom: 10px;
 }
 
 #footer-holder {
   margin: 0 auto;
   width: 940px;
   display: block;
-  overflow: hidden;
-  a {
-    color: $gray;
-    &:hover {
-      color: $grayDarker;
-    }
-  }
 }
 
 #footer-col-holder { 
@@ -234,11 +230,20 @@ footer {
   float: left;
   width: 313px;
   display: block;
+  padding-bottom: 10px;
+}
+
+.footer-col-paragraph {
+  p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-right: 40px;
+  }
 }
 
 .contact-header {
   margin-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: 16px;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 40px;
@@ -263,16 +268,14 @@ footer {
 
 #email-button {
   background: linear-gradient(to bottom, #00A0D7 0%, #0088CE 4%, #0051CF 96%, #00559B 100%) repeat scroll 0 0 transparent;
+  border-radius: 3px 3px 3px 3px;
   padding: 6px 15px 6px;
-  a {
-    color: #ffffff;
-  }
+  color: #ffffff;
 }
 
 #copy {
-  overflow: hidden;
-  small {
-    padding-top: 5px;
-    float: left;
+  p {
+    font-size: 12px;
+    line-height: 14px;
   }
 }
