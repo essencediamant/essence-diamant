@@ -44,6 +44,7 @@ textarea {
   top: 0;
   width: 100%;
   background: linear-gradient(to bottom, #383838 0%, #242424 100%) repeat scroll 0 0 transparent;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#383838), to(#242424));
   overflow: hidden;
 }
 
@@ -206,6 +207,7 @@ textarea {
 
 .footer {
   background: linear-gradient(to bottom, #383838 0%, #242424 100%) repeat scroll 0 0 transparent;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#383838), to(#242424));
   padding-top: 10px;
   display: block;
 	margin-top: 45px;
@@ -270,6 +272,7 @@ textarea {
 
 #email-button {
   background: linear-gradient(to bottom, #00A0D7 0%, #0088CE 4%, #0051CF 96%, #00559B 100%) repeat scroll 0 0 transparent;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#383838), to(#242424));
   border-radius: 3px 3px 3px 3px;
   padding: 6px 15px 6px;
   color: #ffffff;
