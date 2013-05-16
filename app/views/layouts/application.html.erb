@@ -14,6 +14,7 @@
         <%= render 'layouts/quotebox' %>
         <%= yield %>
       </div>
-    <%= render 'layouts/footer' %>
+    
+    <%= render footer(yield(:footer)) %>
   </body>
 </html>
