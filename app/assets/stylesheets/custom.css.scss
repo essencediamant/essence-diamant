@@ -116,28 +116,28 @@ textarea {
 .joy { 
   &:hover {
     background: linear-gradient(to bottom, #FFFF00 0%, #1b1b1b 100%) repeat scroll 0 0 transparent;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FF0000), to(#1b1b1b));
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FFFF00), to(#1b1b1b));
   }
 }
 
 .will {
   &:hover {
     background: linear-gradient(to bottom, #ffffff 0%, #1b1b1b 100%) repeat scroll 0 0 transparent;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FF0000), to(#1b1b1b));
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#1b1b1b));
   }
 }
         
 .compassion {
   &:hover {
     background: linear-gradient(to bottom, #00FF00 0%, #1b1b1b 100%) repeat scroll 0 0 transparent;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FF0000), to(#1b1b1b));
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#00FF00), to(#1b1b1b));
   }
 }
         
 .clarity {
   &:hover {
     background: linear-gradient(to bottom, #303030 0%, #000000 100%) repeat scroll 0 0 transparent;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FF0000), to(#1b1b1b));
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#303030), to(#1b1b1b));
   }
 }
 
