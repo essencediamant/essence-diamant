@@ -20,6 +20,13 @@ body {
   min-width: 1000px;
 } 
 
+address {
+  margin-top: 15px;
+  span {
+    display: block;
+  }
+}
+
 a {
   color: #0088CC;
   text-decoration: none;
