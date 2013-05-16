@@ -193,11 +193,28 @@ textarea {
 #announcement-box {
   float: right;
   width: 300px;
-  height: 370px;
   background-color: #ffffff;
+  h2 {
+    text-align: center;
+  }
+  ul {
+    list-style: none outside none;
+    padding-left: 25px;
+    li {
+      h4 {
+        margin-top: 25px;
+        margin-bottom: 0;
+      }
+      span {
+        margin-top: 5px;
+        display: block;
+      }
+    }
+  }
 }
 
 .section-separator {
+  clear: both;
   width: 400px;
   padding: 1px;
   background-color: #333333;
