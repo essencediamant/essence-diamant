@@ -58,6 +58,7 @@ textarea {
 
 #logo-image {
   margin-top: 7px;
+  margin-bottom: 7px;
   margin-right: 25px;
   float: left;
 }
@@ -194,12 +195,16 @@ textarea {
   float: right;
   width: 300px;
   background-color: #ffffff;
+  border: 2px groove #000000;
+  margin-bottom: 20px;
+  margin-left: 10px;
   h2 {
     text-align: center;
   }
   ul {
     list-style: none outside none;
     padding-left: 25px;
+    padding-right: 25px;
     li {
       h4 {
         margin-top: 25px;
