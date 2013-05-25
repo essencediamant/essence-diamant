@@ -2,16 +2,29 @@
   <div id="navbar-inner">
   	<%= image_tag image_path('hu_small_transparent.png'), id: "logo-image" %>
     <%= link_to "Essence Diamant France", root_path, id: "logo" %>
-    <!--
 		<nav id="nav">
 		  <ul>
-				<li class="strength"><%= link_to "Accueil", root_path %></li>
-				<li class="joy"><%= link_to "L'Approche Diamant", '#' %></li>
-				<li class="will"><%= link_to "Nous Soutenir", '#' %></li>
-				<li class="compassion"><%= link_to "Communauté", '#' %></li>
-				<li class="clarity"><%= link_to "Contact", '#' %></li>
+				<li class="strength">
+					<%= link_to "Accueil", root_path %>
+				</li>
+				<li class="joy">
+					<%= link_to "L'Approche Diamant", '#' %>
+					<ul>
+						<li><%= link_to "Article 1", '#' %></li>
+						<li><%= link_to "Article 2", '#' %></li>
+						<li><%= link_to "Article 3", '#' %></li>
+					</ul>
+				</li>
+				<li class="will">
+					<%= link_to "Nous Soutenir", '#' %>
+				</li>
+				<li class="compassion">
+					<%= link_to "Communauté", '#' %>
+				</li>
+				<li class="clarity">
+					<%= link_to "Contact", '#' %>
+				</li>
 			</ul>
 		</nav>
-		-->
 	</div>
 </header>
