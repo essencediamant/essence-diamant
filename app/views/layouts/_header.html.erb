@@ -2,19 +2,24 @@
   <div id="navbar-inner">
   	<%= image_tag image_path('hu_small_transparent.png'), id: "logo-image" %>
     <%= link_to "Essence Diamant France", root_path, id: "logo" %>
-		<nav id="nav">
+		<nav class="nav">
 		  <ul>
+		  	<!--
 				<li class="strength">
 					<%= link_to "Accueil", root_path %>
 				</li>
-				<li class="joy">
-					<%= link_to "L'Approche Diamant", '#' %>
-					<ul>
-						<li><%= link_to "Article 1", '#' %></li>
-						<li><%= link_to "Article 2", '#' %></li>
-						<li><%= link_to "Article 3", '#' %></li>
-					</ul>
+				-->
+				<li class="clarity dropdown">
+					<%= link_to "Textes et Articles", '#' %>
+					<div class="dropdown-box">
+						<ul>
+							<li><%= link_to "L'Approche Diamant", '#' %></li>
+							<li><%= link_to "Hameed L'Enseignant", '#' %></li>
+							<li><%= link_to "La Collecte du Miel", '#' %></li>
+						</ul>
+					</div>
 				</li>
+				<!--
 				<li class="will">
 					<%= link_to "Nous Soutenir", '#' %>
 				</li>
@@ -24,6 +29,7 @@
 				<li class="clarity">
 					<%= link_to "Contact", '#' %>
 				</li>
+				-->
 			</ul>
 		</nav>
 	</div>

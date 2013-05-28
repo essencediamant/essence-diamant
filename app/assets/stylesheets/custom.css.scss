@@ -52,14 +52,14 @@ textarea {
   width: 100%;
   background: linear-gradient(to bottom, #383838 0%, #242424 100%) repeat scroll 0 0 transparent;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#383838), to(#242424));
-  overflow: hidden;
+  overflow: visible;
 }
 
 #navbar-inner {
   margin: 0 auto;
   width: 940px;
   display: block;
-  overflow: hidden;
+  overflow: visible;
 
 }
 
@@ -85,30 +85,68 @@ textarea {
   }
 }
 
-#nav {
+.nav {
   display: block;
   margin: 0;
   height: 75px;
   float: left;
   border-left: 2px groove #1b1b1b;
-  overflow: hidden;
+  overflow: visible;
   ul {
     margin: 0;
     padding: 0;
-    list-style: none outside none;
-    float: left;
-    overflow: hidden;
+    list-style:none outside none;
+    width:100%;
     li {
       border-right: 2px groove #1b1b1b;
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
       min-height: 75px;
       float: left;
+      position: relative;
       a {
         top: 28px;
         position: relative;
         color: white;
         font-size: 1.2em;
+      }
+    }
+  }
+}
+
+.dropdown {
+  &:hover {
+    .dropdown-box {
+      left:0px;
+    }
+  }
+}
+
+.dropdown-box {
+  top:75px;
+  background:#ffffff;
+  left:-9999px;
+  position:absolute;
+  box-shadow: 0 3px 8px #333333;
+  ul {
+    li {
+      border-right:none;
+      width:100%;
+      min-height: 0;
+      padding: 10px 0px;
+      border-top: 2px groove #1b1b1b;
+      &:hover {
+        background: #000000;
+        a {
+          color: white;
+        }
+      }
+      a {
+        color: #0088CC;
+        top: 0;
+        font-size: 1.0em;
+        margin-left: 10px;
+        margin-right: 10px;
       }
     }
   }
