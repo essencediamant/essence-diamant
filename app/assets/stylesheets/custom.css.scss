@@ -234,12 +234,6 @@ textarea {
 	background-color: white;
 	padding: 15px 42px;
   box-shadow: 0 3px 8px #333333;
-  h2 {
-    margin-bottom: 5px;
-  }
-  span {
-    display: block;
-  }
 }
 
 #announcement-box {
@@ -270,12 +264,34 @@ textarea {
 }
 
 .interview-question {
+  margin-top: 30px;
+  margin-bottom: 25px;
   span {
-    margin-top: 15px;
+    font-weight: bold;
     margin-bottom: 0px;
   }
   p {
-    margin-top: 0px;
+    margin-top: 5px;
+  }
+}
+
+.title {
+  margin-bottom: 25px;
+  h2 {
+    margin-bottom: 8px;
+  }
+  span {
+    font-weight: bold;
+    font-style: italic;
+  }
+}
+
+.footnote {
+  margin-top: 45px;
+  font-size: 13px;
+  font-style: italic;
+  span {
+    display: block;
   }
 }
 
