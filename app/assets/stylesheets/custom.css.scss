@@ -234,6 +234,12 @@ textarea {
 	background-color: white;
 	padding: 15px 42px;
   box-shadow: 0 3px 8px #333333;
+  h2 {
+    margin-bottom: 5px;
+  }
+  span {
+    display: block;
+  }
 }
 
 #announcement-box {
@@ -260,6 +266,16 @@ textarea {
         display: block;
       }
     }
+  }
+}
+
+.interview-question {
+  span {
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+  p {
+    margin-top: 0px;
   }
 }
 
