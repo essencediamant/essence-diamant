@@ -12,6 +12,10 @@
 			</div>
 			<div class="footer-col">
 				<h3 class="subscribe-header">S'abonner</h3>
+				<%= form_for(Subscriber.new) do |f| %>
+					<%= f.text_field :email %>
+					<%= f.submit "Subscribe", class: "button" %>
+				<% end %>
 			</div>
 			<div class="footer-col footer-col-paragraph">
 				<h3 class="follow-header">Échanger</h3>

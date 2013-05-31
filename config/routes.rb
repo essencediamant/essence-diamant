@@ -1,4 +1,5 @@
 EssenceDiamant::Application.routes.draw do
+	resources :subscribers
   root to: 'static_pages#home'
 
   match '/english', to: 'static_pages#english', via: 'get'

@@ -1,12 +1,10 @@
 require 'spec_helper'
 
 describe Subscriber do
-  before { @subscriber = Subscriber.new(fname: "Example", lname: "User", email: "user@example.com") }
+  before { @subscriber = Subscriber.new(email: "user@example.com") }
 
   subject { @subscriber }
 
-  it { should respond_to(:fname) }
-  it { should respond_to(:lname) }
   it { should respond_to(:email) }
 
   it { should be_valid }
