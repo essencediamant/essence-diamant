@@ -16,16 +16,6 @@ describe Subscriber do
   	it { should_not be_valid }
   end
 
-  describe "when first name is too long" do
-  	before { @subscriber.fname = "a" * 51 }
-  	it { should_not be_valid }
-  end
-
-  describe "when last name is too long" do
-  	before { @subscriber.lname = "a" * 51 }
-  	it { should_not be_valid }
-  end
-
   describe "when email format is invalid" do
   	it "should be invalid" do
   		addresses = %w[user@foo,com user_at_foo.org example.user@foo.
