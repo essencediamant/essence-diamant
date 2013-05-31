@@ -40,7 +40,7 @@ describe "Static Pages" do
     it { should_not have_content('Join the Essence Diamant Facebook Group:') }
   end
 
-  describe "Hameed L'Enseignant" do
+  describe "Hameed L'Enseignant page" do
     before { visit hameed_lenseignant_path }
 
     it { should have_content('Pourquoi avez-vous appelé votre enseignement L’Approche Diamant et non la Voie du Diamant ?') }
@@ -52,7 +52,7 @@ describe "Static Pages" do
     it { should_not have_content('Join the Essence Diamant Facebook Group:') }
   end
 
-  describe "La Collecte du Miel" do
+  describe "La Collecte du Miel page" do
     before { visit la_collecte_du_miel_path }
 
     it { should have_content('Il existait, et peut-être existe-t-il toujours, une école secrète en Afghanistan') }
