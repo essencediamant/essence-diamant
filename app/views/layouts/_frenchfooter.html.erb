@@ -12,9 +12,14 @@
 			</div>
 			<div class="footer-col">
 				<h3 class="subscribe-header">S'abonner</h3>
+				<p>
+					Pour être tenus informés de nos activités (articles, publications, retraites), rejoignez notre liste de diffusion.
+				</p>
 				<%= form_for(Subscriber.new) do |f| %>
+					<%= f.label "Email:" %>
 					<%= f.text_field :email %>
-					<%= f.submit "Subscribe", class: "button" %>
+					<%= f.hidden_field :language, :value => "french" %>
+					<%= f.submit "S'abonner", class: "button" %>
 				<% end %>
 			</div>
 			<div class="footer-col footer-col-paragraph">

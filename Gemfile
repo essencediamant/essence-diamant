@@ -3,6 +3,7 @@ ruby '2.0.0'
 
 gem 'rails', '4.0.0.beta1'
 gem 'pg', '0.14.1'
+gem 'gibbon'
 
 group :production do 
   gem 'rack-google_analytics', :require => "rack/google_analytics"

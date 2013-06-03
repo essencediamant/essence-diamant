@@ -20,11 +20,11 @@ describe "Subscriptions" do
 
 		describe "with valid information" do
 			before do
-				fill_in "Email", with: "user@example.com"
+				fill_in "email", with: "user@example.com"
 			end
 
 			it "should create a subscriber" do
-				expect { click_button submit }.to change(Subscriber, :count).by(1)
+				expect { click_button subscribe }.to change(Subscriber, :count).by(1)
 			end
 		end
 	end

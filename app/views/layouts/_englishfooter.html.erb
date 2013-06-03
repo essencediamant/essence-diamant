@@ -12,6 +12,15 @@
 			</div>
 			<div class="footer-col">
 				<h3 class="subscribe-header">Subscribe</h3>
+				<p>
+					Receive updates as we realize our goal of bringing Diamond Approach workshops and books to France.
+				</p>
+				<%= form_for(Subscriber.new) do |f| %>
+					<%= f.label "Email:" %>
+					<%= f.text_field :email %>
+					<%= f.hidden_field :language, :value => "english" %>
+					<%= f.submit "Subscribe", class: "button" %>
+				<% end %>
 			</div>
 			<div class="footer-col footer-col-paragraph">
 				<h3 class="follow-header">Follow</h3>
