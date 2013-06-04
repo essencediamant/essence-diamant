@@ -18,7 +18,7 @@
 				<%= form_for(Subscriber.new) do |f| %>
 					<%= f.label "Email:" %>
 					<%= f.text_field :email %>
-					<%= f.hidden_field :language, :value => "french" %>
+					<%= f.hidden_field :language, :value => "French" %>
 					<%= f.submit "S'abonner", class: "button" %>
 				<% end %>
 			</div>
