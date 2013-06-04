@@ -4,6 +4,7 @@ ruby '2.0.0'
 gem 'rails', '4.0.0.beta1'
 gem 'pg', '0.14.1'
 gem 'gibbon'
+gem 'delayed_job_active_record', '4.0.0.beta2'
 
 group :production do 
   gem 'rack-google_analytics', :require => "rack/google_analytics"

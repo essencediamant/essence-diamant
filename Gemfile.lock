@@ -51,6 +51,11 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.2)
+    delayed_job (4.0.0.beta2)
+      activesupport (>= 3.0, < 4.1)
+    delayed_job_active_record (4.0.0.beta2)
+      activerecord (>= 3.0, < 4.1)
+      delayed_job (~> 4.0.0.beta1)
     diff-lcs (1.2.4)
     erubis (2.7.0)
     execjs (1.4.0)
@@ -87,7 +92,7 @@ GEM
     json_pure (1.8.0)
     libnotify (0.8.0)
       ffi (>= 1.0.11)
-    listen (1.1.4)
+    listen (1.1.5)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
       rb-kqueue (>= 0.2)
@@ -98,8 +103,8 @@ GEM
     method_source (0.8.1)
     mime-types (1.23)
     minitest (4.7.4)
-    multi_json (1.7.5)
-    multi_xml (0.5.3)
+    multi_json (1.7.6)
+    multi_xml (0.5.4)
     nokogiri (1.5.9)
     pg (0.14.1)
     polyglot (0.3.3)
@@ -176,7 +181,7 @@ GEM
     thread_safe (0.1.0)
       atomic
     tilt (1.4.1)
-    treetop (1.4.12)
+    treetop (1.4.14)
       polyglot
       polyglot (>= 0.3.1)
     turbolinks (1.0.0)
@@ -194,6 +199,7 @@ PLATFORMS
 DEPENDENCIES
   capybara (= 2.1.0.beta1)
   coffee-rails (= 4.0.0.beta1)
+  delayed_job_active_record (= 4.0.0.beta2)
   gibbon
   guard-rspec (= 2.5.0)
   guard-spork (= 1.5.0)

@@ -13,8 +13,9 @@ class SubscribersController < ApplicationController
 	end
 
 	def create
-		@subscriber = Subscriber.new(email: params[:subscriber][:email], language: params[:subscriber][:language], active: true)
+		@subscriber = Subscriber.new(email: params[:subscriber][:email], language: params[:subscriber][:language], active: false)
 		if @subscriber.save
+			Subscriber.delay(queue: "add_subscribers", priority: 10).add_subscriber_to_mailchimp(params[:subscriber][:id])
 			if params[:subscriber][:language] == "french"
 				render 'french_subscribe_success'
 		  elsif params[:subscriber][:language] == "english"
