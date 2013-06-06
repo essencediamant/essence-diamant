@@ -379,6 +379,11 @@ textarea {
   background: url(image_path('follow.png')) no-repeat scroll 0 2px transparent;
 }
 
+.button {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
 #email-button {
   background: linear-gradient(to bottom, #00A0D7 0%, #0088CE 4%, #0051CF 96%, #00559B 100%) repeat scroll 0 0 transparent;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#00A0D7), to(#00559B));
