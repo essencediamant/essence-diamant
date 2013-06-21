@@ -1,17 +1,9 @@
-/* mixins, variables, etc. */
+/* MIXINS, VARIABLES, ETC. */
 
-$gray: #555;
-$grayMediumLight: #eaeaea;
 $grayLight: #999;
-$grayDarker: #222;
+$gray: #333;
 
-@mixin box_sizing {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* universal */
+/* UNIVERSAL */
 
 html {
 	overflow-y: scroll;
@@ -19,7 +11,7 @@ html {
 
 body {
 	background: url(image_path('DAplanet.png')) fixed;
-  color: #333333;
+  color: $gray;
   font: 15px/22px Helvetica,Arial,Verdana,sans-serif;
   line-height: 20px;
   margin: 0;
@@ -36,6 +28,9 @@ address {
 a {
   color: #0088CC;
   text-decoration: none;
+    &:hover {
+    text-decoration: underline;
+  }
 }
 
 section {
@@ -46,12 +41,12 @@ textarea {
 	resize: vertical;
 }
 
-/* header */
+/* HEADER */
 
 #navbar {
   display: block;
   border-bottom: 2px solid #d8b74b;
-  box-shadow: 0 3px 8px #333333;
+  box-shadow: 0 3px 8px $gray;
   position: fixed;
   z-index: 10;
   top: 0;
@@ -115,6 +110,7 @@ textarea {
         position: relative;
         color: white;
         font-size: 1.2em;
+        text-decoration: none;
       }
     }
   }
@@ -133,7 +129,7 @@ textarea {
   background:#ffffff;
   left:-9999px;
   position:absolute;
-  box-shadow: 0 3px 8px #333333;
+  box-shadow: 0 3px 8px $gray;
   ul {
     li {
       border-right:none;
@@ -158,45 +154,10 @@ textarea {
   }
 }
 
-.strength {
-  &:hover {
-    background: linear-gradient(to bottom, #FF0000 0%, #1b1b1b 100%) repeat scroll 0 0 transparent;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FF0000), to(#1b1b1b));
-  }
-}
-        
-.joy { 
-  &:hover {
-    background: linear-gradient(to bottom, #FFFF00 0%, #1b1b1b 100%) repeat scroll 0 0 transparent;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FFFF00), to(#1b1b1b));
-  }
-}
-
-.will {
-  &:hover {
-    background: linear-gradient(to bottom, #ffffff 0%, #1b1b1b 100%) repeat scroll 0 0 transparent;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#1b1b1b));
-  }
-}
-        
-.compassion {
-  &:hover {
-    background: linear-gradient(to bottom, #00FF00 0%, #1b1b1b 100%) repeat scroll 0 0 transparent;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#00FF00), to(#1b1b1b));
-  }
-}
-        
-.clarity {
-  &:hover {
-    background: linear-gradient(to bottom, #303030 0%, #000000 100%) repeat scroll 0 0 transparent;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#303030), to(#1b1b1b));
-  }
-}
-
-/* quotebox */
+/* QUOTE BOX */
 
 #quote-box {
-  box-shadow: 0 3px 8px #333333;
+  box-shadow: 0 3px 8px $gray;
   background: none repeat scroll 0 0 #FFFFFF;
   opacity: 0.65;
   display: block;
@@ -215,7 +176,7 @@ textarea {
   }
 }
 
-/* main */
+/* MAIN */
 
 #main-wrapper {
   width: 940px;
@@ -239,7 +200,7 @@ textarea {
 #main {
 	background-color: white;
 	padding: 15px 42px;
-  box-shadow: 0 3px 8px #333333;
+  box-shadow: 0 3px 8px $gray;
 }
 
 #announcement-box {
@@ -258,7 +219,7 @@ textarea {
     padding-right: 25px;
     li {
       h4 {
-        margin-top: 25px;
+        margin-top: 15px;
         margin-bottom: 0;
       }
       span {
@@ -268,6 +229,8 @@ textarea {
     }
   }
 }
+
+/* TEXTS */
 
 .interview-question {
   margin-top: 30px;
@@ -305,14 +268,14 @@ textarea {
   clear: both;
   width: 400px;
   padding: 1px;
-  background-color: #333333;
+  background-color: $gray;
   margin-right: auto;
   margin-left: auto;
   margin-top: 25px;
   margin-bottom: 25px;
 }
 
-/* footer */
+/* FOOTER */
 
 .footer {
   background: linear-gradient(to bottom, #383838 0%, #242424 100%) repeat scroll 0 0 transparent;
@@ -325,7 +288,7 @@ textarea {
   font-size: 14px;
   line-height: 17px;
   margin-bottom: 0;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 #footer-holder {
@@ -390,6 +353,7 @@ textarea {
   border-radius: 3px 3px 3px 3px;
   padding: 6px 15px 6px;
   color: #ffffff;
+  text-decoration: none;
 }
 
 #copy {
@@ -397,15 +361,4 @@ textarea {
     font-size: 12px;
     line-height: 14px;
   }
-}
-
-/* miscellaneous */
-
-.debug_dump {
-  clear: both;
-  float: left;
-  width: 100%;
-  margin-top: 45px;
-  background: #ffffff;
-  @include box_sizing;
 }
