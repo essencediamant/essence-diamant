@@ -29,4 +29,11 @@ class SubscribersController < ApplicationController
 		  end
 		end
 	end
+
+	def mailchimp_event
+		if params[:type] == "unsubscribe"
+		  @subscriber = Subscriber.find_by(email: params[:data][:email])
+		  @subscriber.destroy
+		end
+	end
 end

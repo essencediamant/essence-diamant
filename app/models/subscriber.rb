@@ -13,4 +13,5 @@ class Subscriber < ActiveRecord::Base
 									     :merge_vars => {'GROUPINGS' => {0 => {'id' => group[:id], 'groups' => self.language}}} })
 		update_attribute(:active, true)
 	end
+
 end
